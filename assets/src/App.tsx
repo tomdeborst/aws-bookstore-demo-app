@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 import { Auth } from "aws-amplify";
 import React, { Component, Fragment } from "react";
 import { LinkContainer } from "react-router-bootstrap";
