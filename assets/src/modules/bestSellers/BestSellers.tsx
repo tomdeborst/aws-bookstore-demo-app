@@ -1,6 +1,9 @@
 import React from "react";
 import { API } from "aws-amplify";
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
+configure({ adapter: new Adapter() });
 import BestSellerProductRow from "./BestSellerProductRow";
 import { CategoryNavBar } from "../category/categoryNavBar/CategoryNavBar";
 import { SearchBar } from "../search/searchBar/SearchBar";
