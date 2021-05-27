@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-echo $(python3 StaticCheck.py)
-if [ $(python3 StaticCheck.py) = 0 ]; then
+echo $(python3 StaticCheckComments.py)
+if [ $(python3 StaticCheckComments.py) = 0 ]; then
       echo 'Config not present!'
       exit 2
 
