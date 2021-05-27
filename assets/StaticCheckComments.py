@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 string1 = 'Thomas de Borst'
 # opening a text file
-file1 = open("/src/App.tsx", "r")
+file1 = open("src/App.tsx", "r")
 # read file content
 readfile = file1.read()
 # checking condition for string found or not

@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 echo $(python3 StaticCheckComments.py)
 if [ $(python3 StaticCheckComments.py) = 0 ]; then
-      echo 'Config not present!'
+      echo 'Comments not present!'
       exit 2
 
 fi
-echo 'Config check passed!'
+echo 'Comments check passed!'
 #npm install
 npm run build
-cd src __tests__
+cd src _tests_
 jest
 cd ../../../
 git add .
