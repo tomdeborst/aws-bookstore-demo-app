@@ -34,6 +34,7 @@ export default class PastPurchases extends Component<PastPurchasesProps, PastPur
   }
 
   async componentDidMount() {
+    window.alert('X');
     const userInfo = await Auth.currentUserInfo();
     this.setState({ userInfo })
 

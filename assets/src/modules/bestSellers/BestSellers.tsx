@@ -2,11 +2,11 @@ import React from "react";
 import { API } from "aws-amplify";
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
 import BestSellerProductRow from "./BestSellerProductRow";
 import { CategoryNavBar } from "../category/categoryNavBar/CategoryNavBar";
 import { SearchBar } from "../search/searchBar/SearchBar";
+
+configure({ adapter: new Adapter() });
 
 interface BestSellersProps {}
 
@@ -26,6 +26,7 @@ export default class BestSellers extends React.Component<BestSellersProps, BestS
   }
 
   async componentDidMount() {
+    window.alert('X');
     try {
       const books = [];
       const bestSellers = await API.get("bestsellers", "/bestsellers", null);
