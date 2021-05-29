@@ -26,7 +26,7 @@ export default class BestSellers extends React.Component<BestSellersProps, BestS
   }
 
   async componentDidMount() {
-    window.alert('X');
+    //window.alert('X');
     try {
       const books = [];
       const bestSellers = await API.get("bestsellers", "/bestsellers", null);

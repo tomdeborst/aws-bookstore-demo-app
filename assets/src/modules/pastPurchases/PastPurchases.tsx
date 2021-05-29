@@ -34,7 +34,7 @@ export default class PastPurchases extends Component<PastPurchasesProps, PastPur
   }
 
   async componentDidMount() {
-    window.alert('X');
+  
     const userInfo = await Auth.currentUserInfo();
     this.setState({ userInfo })
 
@@ -59,6 +59,7 @@ export default class PastPurchases extends Component<PastPurchasesProps, PastPur
   }
 
   render() {
+    window.alert('RENDERING CORRECTLY');
     return (
       <div className="Category">
         <SearchBar />

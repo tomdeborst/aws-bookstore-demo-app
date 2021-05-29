@@ -6,8 +6,9 @@ if [ $(python3 StaticCheckComments.py) = 0 ]; then
 
 fi
 echo 'Comments check passed!'
+
 #npm install
-npm run test
+npm run build
 cd src __tests__
 jest
 cd ../../../
