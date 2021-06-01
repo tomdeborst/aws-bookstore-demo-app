@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 import React, { Component } from "react";
 import { CategoryNavBar } from "../category/categoryNavBar/CategoryNavBar";
 import { SearchBar } from "../search/searchBar/SearchBar";
@@ -59,7 +61,7 @@ export default class PastPurchases extends Component<PastPurchasesProps, PastPur
   }
 
   render() {
-    window.alert('RENDERING CORRECTLY');
+    //window.alert('RENDERING CORRECTLY');
     return (
       <div className="Category">
         <SearchBar />

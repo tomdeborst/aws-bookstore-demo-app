@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 // test file
 import { shallow, mount, render } from 'enzyme';
 import React from 'react';
@@ -8,6 +10,8 @@ const jsdomAlert = window.alert;  // remember the jsdom alert
   window.alert = () => {};  // provide an empty implementation for window.alert
 
 describe('60759790', () => {
+  const jsdomAlert = window.alert;  // remember the jsdom alert
+
   it('should render text for h3', () => {
     const wrapper = shallow(<BestSellers />);
     const text = wrapper.find('h3');

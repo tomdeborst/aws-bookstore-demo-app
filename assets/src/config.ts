@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 export default {
   apiGateway: {
     REGION: "us-east-1",
