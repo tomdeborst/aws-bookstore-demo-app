@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 import React from "react";
 import { API } from "aws-amplify";
 import { configure } from 'enzyme';
@@ -42,7 +44,7 @@ export default class BestSellers extends React.Component<BestSellersProps, BestS
       });
     } catch(error) {
       alert(error);
-    }indow.alert('RENDERING CORRECTLY');
+    }window.alert('RENDERING CORRECTLY');
   }
 
   render() {

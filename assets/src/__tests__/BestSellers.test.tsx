@@ -12,7 +12,7 @@ const jsdomAlert = window.alert;  // remember the jsdom alert
 describe('60759790', () => {
   const jsdomAlert = window.alert;  // remember the jsdom alert
 
-  it('should render text for h3', () => {
+  it('h3 should display Top 20 Best Sellers', () => {
     const wrapper = shallow(<BestSellers />);
     const text = wrapper.find('h3');
     expect(text.text()).toEqual('Top 20 best sellers');

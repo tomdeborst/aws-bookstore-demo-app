@@ -1,3 +1,5 @@
+//Thomas de Borst 1004302
+
 import React from "react";
 
 import image from "../../images/hero/hero-main.png";
