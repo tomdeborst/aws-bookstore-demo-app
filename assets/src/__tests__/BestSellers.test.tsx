@@ -1,7 +1,7 @@
 //Thomas de Borst 1004302
 
 // test file
-import { shallow, mount, render } from 'enzyme';
+import { shallow} from 'enzyme';
 import React from 'react';
 import BestSellers from '/home/tpd3/compx341/aws-bookstore-demo-app/assets/src/modules/bestSellers/BestSellers';
 //import Adapter from 'enzyme-adapter-react-16';
